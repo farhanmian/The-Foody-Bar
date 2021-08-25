@@ -66,6 +66,7 @@ function SideBar() {
 
         const fetchStoredData = async () => {
             setIsLoading(true);
+            setNoResultFound(null);
             setFetchRecipeList({ data: [] });
 
             const response = await fetch('https://foody-f199c-default-rtdb.firebaseio.com/.json');
