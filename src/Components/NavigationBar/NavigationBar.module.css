@@ -1,0 +1,49 @@
+.NavigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(0,0,0,.5); */
+    background-color: #040404;
+    max-height: 5.5rem;
+    min-height: 5rem;
+    overflow: hidden;
+    border: 1px solid #5b5b5b;
+    padding: 0 .5rem;
+}
+
+
+.NavigationBar-SearchInput {
+    border-radius: 10px;
+    width: 25rem;
+    height: 2rem;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.Logo {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Logo {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .NavigationBar {
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .NavigationBar-SearchInput {
+        width: 10rem;
+        transition: width .2s;
+    }
+    .NavigationBar-SearchInput:focus {
+        width: 15rem;
+    }
+}

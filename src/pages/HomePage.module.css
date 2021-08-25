@@ -1,0 +1,121 @@
+.HomePage {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0,0,0,.6) 85%, rgba(255,255,255,.3)),url(../Assets/Image/bg.jpg);
+    background-size: cover;
+    background-position: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.Heading {
+    font-size: 50px;
+    filter: drop-shadow(0 5px 5px rgba(255,255,255,.7));
+    text-decoration: underline;
+    margin: 0;
+}
+
+.Logo {
+    filter: drop-shadow(10px 13px 4px black);
+    pointer-events: none;
+    width: 11vw;
+}
+
+.SearchBar {
+    width: 50%;
+    background-color: transparent;
+    background-image: linear-gradient(to right,rgba(255,255,255,.2), rgba(255,255,255,.6));
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin: 5rem auto 0 auto;
+}
+
+
+.SearchBarInput {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1500px) {
+    .Logo {
+        width: 13vw;
+    }
+    .Heading {
+        font-size: 2.7rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .Logo {
+        width: 14vw;
+    }
+    .Heading {
+        margin-top: 2rem;
+    }
+    .SearchBar {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Logo {
+        width: 18vw;
+    }
+    .SearchBar {
+        width: 75%;
+    }
+    .SearchBarInput {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Logo {
+        width: 25vw;
+    }
+    .Heading {
+        font-size: 6vw;
+        filter: drop-shadow(0 5px 5px rgba(255,255,255,.3));
+    }
+    .SearchBar {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .HomePage {
+        background-image: radial-gradient(rgba(0,0,0,.7) 85%, rgba(0, 0, 0, 0.8)),url(../Assets/Image/bg.jpg);
+    }
+
+    .Logo {
+        width: 30vw;
+    }
+    
+    .Heading {
+        margin-top: 3rem;
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Logo {
+        width: 10rem;
+    }
+    .Heading {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-top: 0;
+        filter: drop-shadow(0 3px 3px rgba(255,255,255,.3));
+    }
+    .SearchBar {
+        width: 95%;
+        margin-top: 2rem;
+    }
+}

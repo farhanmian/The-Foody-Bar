@@ -1,0 +1,31 @@
+.SearchBar {
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    width: max-content;
+    overflow: hidden;
+    letter-spacing: .8px;
+    padding: .2rem 1rem;
+}
+
+.SearchInput {
+    border: none;
+    outline: none;
+    color: #2e2d2d;
+    min-height: 2rem;
+}
+
+.Button {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 1px #00000054);
+}
+
+.Button img {
+    width: 2rem;
+}

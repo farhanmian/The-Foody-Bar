@@ -1,0 +1,136 @@
+.RecipeItems-ul {
+    width: 95%;
+    height: max-content;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1rem .5rem;
+    border-top: 1px solid #9f0000;
+}
+.RecipeItem {
+    width: 95%;
+    max-height: 70vh;
+    list-style: none;
+    background-image: linear-gradient(to right,#ec0000, #000);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: .2rem .5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border: 1px solid #c1c0c0;
+
+}
+
+.RecipeMenu {
+    color: transparent;
+    background-image: linear-gradient(to bottom,#f00, #900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-color: #c60000;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin: 0;
+    pointer-events: none;
+}
+
+.RecipeItem:hover {
+    box-shadow: 0px 5px 10px red;
+    border-color: red;
+    transform: translateY(-2px);
+}
+.RecipeItem:active {
+    box-sizing: none;
+    border-color: #c1c0c0;
+    transform: translateY(0);
+}
+
+.RecipeItemName {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.RecipeItem-imgContainer {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    border-right: 1px solid #000;
+    padding-right: 1rem;
+}
+
+.RecipeItem img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 100px;
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .RecipeItem-imgContainer {
+        margin-right: .2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .RecipeItems-ul {
+        width: 95%;
+    }
+    .RecipeItem-imgContainer {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+    }
+    .RecipeItem-imgContainer img {
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
+        align-self: center;
+        border-color: #fff;
+    }
+    .RecipeItem {
+        border-radius: 10px;
+        width: 70%;
+        margin: 0 auto 2rem auto;
+    }
+    .RecipeItemName {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .RecipeItems-ul {
+        padding-top: 2rem;
+    }
+    .RecipeItem {
+        width: 80%;
+    }
+    .RecipeItem-imgContainer {
+        width: 4rem;
+        height: 4rem;
+        padding-right: .5rem;
+    }
+    .RecipeItem:hover {
+        box-shadow: none;
+        border-color: #c1c0c0;
+        transform: none;
+    }
+    .RecipeItemName {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .RecipeItem {
+        width: 100%;
+    }
+    .RecipeItemName {
+        font-size: 1rem;
+    }
+}

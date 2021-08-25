@@ -1,0 +1,9 @@
+.Card {
+    /* border-radius: 10px; */
+    /* background-color: #fff; */
+    /* border: 1px solid #d1d1d1; */
+    /* max-height: 72.6vh; */
+    background-color: #000;
+    border: 1px solid #5b5b5b;
+    overflow: scroll;
+}
