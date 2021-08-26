@@ -50,7 +50,7 @@ function SideBar() {
                     }
                 ));
 
-                fetch(`https://foody-f199c-default-rtdb.firebaseio.com/${recipeTitle}.json`, {  ///////////// these result will be added to firebase
+                fetch(`${process.env.REACT_APP_STORED_DATA}/${recipeTitle}.json`, {
                     method: 'POST',
                     body: JSON.stringify(transformedData),
                     headers: {
@@ -69,7 +69,7 @@ function SideBar() {
             setNoResultFound(null);
             setFetchRecipeList({ data: [] });
 
-            const response = await fetch('https://foody-f199c-default-rtdb.firebaseio.com/.json');
+            const response = await fetch(`${process.env.REACT_APP_STORED_DATA}/.json`);
             const data = await response.json();
             let storeData;
 

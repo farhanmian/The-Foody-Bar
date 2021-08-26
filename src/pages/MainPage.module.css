@@ -14,5 +14,6 @@
 @media only screen and (max-width: 600px) {
     .Main {
         padding: 0;
+        padding-top: .3rem;
     }
 }
